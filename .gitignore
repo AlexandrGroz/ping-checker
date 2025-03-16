@@ -1,0 +1,94 @@
+# Editor directories and files
+.idea/
+.idea
+*.sublime-workspace
+*.sublime-project
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+frontend/node_modules/
+bower_components/
+
+# Build directories
+frontend/dist/
+build/
+out/
+dist
+dist-ssr
+*.local
+
+# Temporary or cache files
+*.tmp
+*.temp
+*.cache
+.cache/
+webpack-cache/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Dependency locks
+package-lock.json
+yarn.lock
+
+# Generated files
+coverage/
+*.min.js
+*.min.css
+*.map
+*.gz
+
+# Static files
+public/assets/
+public/static/
+
+# Testing
+.nyc_output/
+junit.xml
+*.tap
+test-output/
+
+# Linting
+eslintcache
+.stylelintcache
+
+# Miscellaneous
+*.sqlite3
+*.pyc
+*.pyo
+
+# Extra
+commands_list.txt
+test.html

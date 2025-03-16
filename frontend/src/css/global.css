@@ -1,0 +1,65 @@
+:root {
+  /*Project colors*/
+  --LIGHT_100: #ffffff;
+  --LIGHT_50: #fafafa;
+  --LIGHT_25: #e9e9eb;
+
+  --DARK_100: #202020;
+
+  --SUCCESS_100: #77b39c;
+  --SUCCESS_50: #a8d9c6;
+
+  --ERROR_100: #ff7878;
+  --ERROR_50: #fdb5b5;
+
+  --UPDATE_100: #8cd9e3;
+
+  --WARNING_100: #d5b248;
+  --CSV_100: #57ab3d;
+
+  --TABLE_HEADER_100: #5369f0;
+
+  --SHADOW_100:#d0d0d0;
+  --SHADOW_25:#e6e1e1;
+
+  --STANDARD_FONT: var(--DARK_100);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--STANDARD_FONT);
+  background: var(--LIGHT_25);
+}
+
+/* 150% */
+@media (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
