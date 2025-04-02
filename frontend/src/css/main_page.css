@@ -1,8 +1,7 @@
 /**General**/
 .main_wrapper{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .hidden{
@@ -21,13 +20,11 @@
 
 /**Content**/
 .main_content{
-    align-content: center;
     padding: 0.5rem 0;
 }
 
 .inside_wrapper{
-    width: fit-content;
-    max-width: 94rem;
+    width: 94rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -79,9 +76,7 @@ th {
     padding: 0.3rem 1rem;
     border: 0.0625rem solid var(--DARK_100);
     background: var(--TABLE_HEADER_100);
-    table-layout: fixed;
     color: var(--LIGHT_100);
-    overflow: hidden;
 }
 
 .th_service{
@@ -160,13 +155,22 @@ td {
 
 .main_action{
     font-size: 1.1rem;
-    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.25rem 1rem;
     border-radius: 0.2rem;
     font-weight: 500;
     cursor: pointer;
     background: var(--SUCCESS_100);
     color: var(--LIGHT_100);
+}
+
+.testing{
+    background: #d6b246;
+    color: var(--DARK_100);
+    border: 0.2rem solid var(--DARK_100);
 }
 
 .add_ip_button{
@@ -187,6 +191,10 @@ td {
 
 .export{
     background: var(--CSV_100);
+}
+
+.mobile_text{
+    display: none;
 }
 
 /**Footer**/

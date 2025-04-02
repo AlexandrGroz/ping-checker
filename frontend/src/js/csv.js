@@ -64,6 +64,27 @@ export class CSV{
 
         reader.readAsText(file);
     }
+
+    static async loadTestCSV() {
+        try {
+            const response = await fetch('/static/test.csv');
+            const text = await response.text();
+
+            const blob = new Blob([text], {type: 'text/csv'});
+            const file = new File([blob], 'test.csv', {type: 'text/csv'});
+
+            const tempInput = document.createElement('input');
+            tempInput.type = 'file';
+
+            const dataTransfer = new DataTransfer();
+            dataTransfer.items.add(file);
+            tempInput.files = dataTransfer.files;
+
+            CSV.importCSV(tempInput);
+        } catch (error) {
+            console.error('Ошибка при загрузке тестового CSV:', error);
+        }
+    }
 }
 
 window.CSV = CSV;

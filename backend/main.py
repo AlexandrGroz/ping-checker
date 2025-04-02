@@ -14,6 +14,7 @@ app = FastAPI()
 DIST_PATH = Path(__file__).parent.parent / "frontend/dist"
 app.mount("/assets", StaticFiles(directory=DIST_PATH / "assets"))
 app.mount("/favicons", StaticFiles(directory=DIST_PATH / "favicons"))
+app.mount("/static", StaticFiles(directory=DIST_PATH / "static"))
 
 
 @app.get("/")

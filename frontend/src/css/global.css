@@ -38,14 +38,6 @@ body, html {
   background: var(--LIGHT_25);
 }
 
-/* 150% */
-@media (max-width: 1400px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-
 *,
 *::before,
 *::after {
@@ -56,7 +48,7 @@ body, html {
   position: relative;
   width: 100%;
   min-width: 320px;
-  min-height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;

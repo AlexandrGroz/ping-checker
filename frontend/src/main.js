@@ -1,13 +1,17 @@
 import './css/global.css'
 import './css/main_page.css'
+import './css/media.css'
 import {TableActions} from "./js/table_actions.js";
 import {CSV} from './js/csv.js'
+
 
 document.querySelector('#app').innerHTML = `
     <header class="main_wrapper">
     </header>
     
     <div class="main_wrapper main_content">
+        <div class="mobile_text">Мобильная версия приложения<br>недоступна.</div>
+        
         <div class="inside_wrapper">
             <table>
                 <thead>
@@ -25,6 +29,7 @@ document.querySelector('#app').innerHTML = `
             </table>
             
             <div class="table_action_buttons disable_interaction">
+                <div class="main_action testing" onclick="CSV.loadTestCSV()">Заполнить тестовыми данными</div>
                 <div class="main_action add_ip_button" onclick="TableActions.addRow(this)">Добавить IP</div>
                 <div class="csv_actions">
                     <div class="main_action import" onclick="CSV.importCSVButton()">Импортировать CSV</div>
